@@ -1,6 +1,6 @@
 ﻿using System.Data.Entity;
 
-namespace WebApplication1.Models
+namespace AudiRsWeb.Models
 {
     public class Context : DbContext
     {

@@ -6,9 +6,9 @@ using System.Text;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
-using WebApplication1.Models;
+using AudiRsWeb.Models;
 
-namespace WebApplication1.Controllers
+namespace AudiRsWeb.Controllers
 {
     public class LoginController : Controller
     {

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // Bir derleme hakkındaki genel Bilgiler aşağıdakiler üzerinden denetlenir
 // denetlenir. Bir derlemeyle ilişkilendirilmiş bilgileri değiştirmek için bu
 // öznitelik değerlerini değiştirin.
-[assembly: AssemblyTitle("WebApplication1")]
+[assembly: AssemblyTitle("AudiRsWeb")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("WebApplication1")]
+[assembly: AssemblyProduct("AudiRsWeb")]
 [assembly: AssemblyCopyright("Telif hakkı ©  2022")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
