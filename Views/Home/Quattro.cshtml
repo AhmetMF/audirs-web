@@ -1,0 +1,144 @@
+﻿@using WebApplication1.Models
+@model List<quattro>
+@{
+    ViewBag.Title = "Quattro";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+
+
+
+<!-- about breadcrumb -->
+<section class="w3l-about-breadcrumb position-relative text-center">
+    <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
+        <div class="container py-lg-5 py-3">
+            <h2 class="title">Quattro</h2>
+            <ul class="breadcrumbs-custom-path mt-2">
+                <li><a href="/Home">Ana Sayfa</a></li>
+                <li class="active"><span class="fa fa-angle-double-right mx-2" aria-hidden="true"></span> Quattro </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!-- //about breadcrumb -->
+<!--/services-sec-->
+<div class="w3-services py-5">
+    <div class="container py-lg-4">
+        <div class="title-content text-left mb-lg-5 mb-4">
+            <h6 class="sub-title">Quatrro Teknolojisi</h6>
+
+
+
+        </div>
+        <div class="row w3-services-grids">
+            <div class="col-lg-4 col-md-6 causes-grid">
+                <div class="causes-grid-info">
+                    <img src="~/images/111.jpg" class="img-fuild" alt="">
+                    <h4 class="cause-title">
+                        Dört Halka ve quattro
+                    </h4>
+                      @foreach (var X in Model)
+                      {
+                    <p class="card-text mb-0">
+                        @X.text1
+                        </p> }
+               </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 causes-grid">
+                <div class="causes-grid-info">
+                    <img src="~/images/2222.jpg" class="img-fuild" alt="">
+                    <a href="#" class="cause-title-wrap">
+                        <h4 class="cause-title">
+                            quattro Teknolojisi
+                        </h4>
+                    </a>
+                   @foreach (var X in Model)
+                    {
+                        <p class="card-text mb-0">
+                            @X.text2
+                           </p> }
+
+
+                    </div>
+            </div>
+            <div class="col-lg-4 col-md-6 causes-grid">
+                <div class="causes-grid-info">
+                    <img src="~/images/3333.jpg" class="img-fuild" alt="">
+                    <a href="#" class="cause-title-wrap">
+                        <h4 class="cause-title">
+                            Motor Sporları
+                        </h4>
+                    </a>
+                    @foreach (var X in Model)
+                    {
+                        <p class="card-text mb-0">
+                            @X.text3
+                        </p> }
+
+
+                    </div>
+            </div>
+            <div class="col-lg-4 col-md-6 causes-grid">
+                <div class="causes-grid-info">
+                    <img src="~/images/444.jpg" class="img-fuild" alt="">
+                    <a href="#" class="cause-title-wrap">
+                        <h4 class="cause-title">
+                            Geçmişten Günümüze quattro
+                        </h4>
+                    </a>
+                    @foreach (var X in Model)
+                    {
+                        <p class="card-text mb-0">
+                            @X.text4
+                        </p> }
+
+
+
+                    </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--//services-sec-->
+<!-- Template JavaScript -->
+<script src="~/js/jquery-3.3.1.min.js"></script>
+<script src="~/js/theme-change.js"></script>
+<!-- disable body scroll which navbar is in active -->
+<script>
+    $(function () {
+        $('.navbar-toggler').click(function () {
+            $('body').toggleClass('noscroll');
+        })
+    });
+</script>
+<!-- disable body scroll which navbar is in active -->
+<!--/MENU-JS-->
+<script>
+    $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+            $("#site-header").addClass("nav-fixed");
+        } else {
+            $("#site-header").removeClass("nav-fixed");
+        }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+        if ($(window).width() > 991) {
+            $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+        });
+    });
+</script>
+<!--//MENU-JS-->

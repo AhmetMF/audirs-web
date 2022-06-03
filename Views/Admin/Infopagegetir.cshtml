@@ -1,0 +1,27 @@
+﻿
+
+@using WebApplication1.Models
+@model List<infopage>
+@{
+    ViewBag.Title = "Infopageguncelle";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<table class="table table-bordered mt-3">
+    <tr>
+        <th>Id</th>
+        <th>Aciklama</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.id</td>
+            <td>@x.text1.</td>
+
+        <td><a href="/Admin/Infopageguncelle/@x.id " class="btn btn-primary">Güncelle</a></td>
+        </tr>
+    }
+
+
+
+</table>

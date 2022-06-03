@@ -1,0 +1,98 @@
+﻿@*@using WebApplication1.Models
+    @model List<infopage>
+    @{
+        ViewBag.Title = "Infopageguncelle";
+        Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    }
+
+    <table>
+        class="table table-bordered mt-3"
+        <tr>
+            <th>Id</th>
+            <th>Acıklma</th>
+        </tr>
+        @foreach (var x in Model)
+        {
+    <tr></tr>
+            <tr>@x.id</tr>
+            <tr>@x.text1</tr>
+
+            <td><a href="/Admin/Infopageguncelle/@x.id " class="btn btn-primary">Güncelle</a></td>
+
+
+        }
+
+    </table>*@
+
+@model WebApplication1.Models.infopage
+@{
+    ViewBag.Title = "Infopagegetir";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2 class="mt-4">Araç bilgilerini düzenle</h2>
+<hr />
+
+@using (Html.BeginForm("Infopageguncelle", "Admin", FormMethod.Post))
+{
+    @Html.LabelFor(x => x.id)
+    @Html.TextBoxFor(x => x.id, new { @class = "form-control", @readonly = "readonly" })
+    <br />
+    @Html.LabelFor(x => x.text1)
+    @Html.TextBoxFor(x => x.text1, new { @class = "from-control" })
+    <br />
+    @Html.LabelFor(x => x.img1)
+    @Html.TextBoxFor(x => x.img1, new { @class = "from-control" })
+    <br />
+    @Html.LabelFor(x => x.text2)
+    @Html.TextBoxFor(x => x.text2, new { @class = "from-control" })
+    <br />
+    @Html.LabelFor(x => x.img2)
+    @Html.TextBoxFor(x => x.img2, new { @class = "from-control" })
+    <br />
+    @Html.LabelFor(x => x.text3)
+    @Html.TextBoxFor(x => x.text3, new { @class = "from-control" })
+    <br />
+    @Html.LabelFor(x => x.img3)
+    @Html.TextBoxFor(x => x.img3, new { @class = "from-control" })
+    <br />
+    @Html.LabelFor(x => x.text4)
+    @Html.TextBoxFor(x => x.text4, new { @class = "from-control" })
+    <br />
+    @Html.LabelFor(x => x.img4)
+    @Html.TextBoxFor(x => x.img4, new { @class = "from-control" })
+    <br />
+    @Html.LabelFor(x => x.text5)
+    @Html.TextBoxFor(x => x.text5, new { @class = "from-control" })
+    <br />
+    @Html.LabelFor(x => x.img5)
+    @Html.TextBoxFor(x => x.img5, new { @class = "from-control" })
+    <br />
+    @Html.LabelFor(x => x.text6)
+    @Html.TextBoxFor(x => x.text6, new { @class = "from-control" })
+    <br />
+    @Html.LabelFor(x => x.img6)
+    @Html.TextBoxFor(x => x.img6, new { @class = "from-control" })
+    <br />
+    @Html.LabelFor(x => x.text7)
+    @Html.TextBoxFor(x => x.text7, new { @class = "from-control" })
+    <br />
+    @Html.LabelFor(x => x.img7)
+    @Html.TextBoxFor(x => x.img7, new { @class = "from-control" })
+    <br />
+    @Html.LabelFor(x => x.text8)
+    @Html.TextBoxFor(x => x.text8, new { @class = "from-control" })
+    <br />
+    @Html.LabelFor(x => x.img8)
+    @Html.TextBoxFor(x => x.img8, new { @class = "from-control" })
+    <br />
+    @Html.LabelFor(x => x.text9)
+    @Html.TextBoxFor(x => x.text9, new { @class = "from-control" })
+    <br />
+    @Html.LabelFor(x => x.img9)
+    @Html.TextBoxFor(x => x.img9, new { @class = "from-control" })
+    <br />
+    <button class="btn btn-success">Güncelle</button>
+
+}
+

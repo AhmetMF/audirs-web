@@ -1,0 +1,46 @@
+﻿@using WebApplication1.Models
+@model List<AnaSayfa>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<table class="table table-bordered mt-3">
+    <tr>
+        <th>Id</th>
+        <th>Rs 7 banner</th>
+        <th>RS 6 banner</th>
+        <th>RS 7 banner</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.id</td>
+            <td>@x.banner1.</td>
+            <td>@x.banner2.</td>
+            <td>@x.banner3.</td>
+
+            <td><a href="#" class="btn btn-primary">Güncelle</a></td>
+        </tr>
+}
+    <tr>
+        <th>Id</th>
+        <th>Acıklama 1</th>
+        <th>Acıklama 2</th>
+        <th>Acıklama resim</th>
+    </tr>
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.id</td>
+            <td>@x.oz1.</td>
+            <td>@x.oz2.</td>
+            <td>@x.racetext.</td>
+
+            <td><a href="/Admin/AnaSayfaGetir/@x.id " class="btn btn-primary">Güncelle</a></td>
+        </tr>
+    }
+
+    
+
+</table>

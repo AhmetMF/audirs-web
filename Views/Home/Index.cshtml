@@ -1,0 +1,506 @@
+﻿@using WebApplication1.Models
+@model List<AnaSayfa>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+<!-- main-slider -->
+<section class="w3l-main-slider position-relative" style="" id="home">
+    <div class="companies20-content">
+
+        <div class="owl-one owl-carousel owl-theme">
+            <div class="item">
+                @foreach (var x in Model)
+                {
+                    <li>
+
+                        <div class="slider-info banner-view bg bg2" style=" background: url(@x.banner1) no-repeat center;">
+                            <div class="banner-info">
+                                <div class="container">
+                                    <div class="banner-info-bg">
+                                        <h5>Audi RS7</h5>
+                                        <div class="banner-buttons">
+                                            <a class="btn btn-style btn-primary" href="/Home/rs7">RS7 Hakkında</a>
+                                            <a href="#small-dialog" class="popup-with-zoom-anim play-view">
+                                                <span class="video-play-icon">
+                                                    <span class="fa fa-play"></span>
+                                                </span>
+                                                <h6>RS7 Tanıtım</h6>
+                                            </a>
+                                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                            <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+
+                                                <iframe src="https://player.vimeo.com/video/715964225?h=d7c83f650d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="RS7 Frahman.mp4"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>}
+
+                <!--<li
+
+                    <div class="slider-info banner-view bg bg2" style=" background: url(../images/sliderbg1.jpg) no-repeat center;">
+                        <div class="banner-info">
+                            <div class="container">
+                                <div class="banner-info-bg">
+                                    <h5>Audi RS7</h5>
+                                    <div class="banner-buttons">
+                                        <a class="btn btn-style btn-primary" href="/Home/rs7">RS7 Hakkında</a>
+                                        <a href="#small-dialog" class="popup-with-zoom-anim play-view">
+                                            <span class="video-play-icon">
+                                                <span class="fa fa-play"></span>
+                                            </span>
+                                            <h6>RS7 Tanıtım</h6>
+                                        </a>-->
+                <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                <!--<div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+
+                                           <iframe src="https://player.vimeo.com/video/715964225?h=d7c83f650d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="RS7 Frahman.mp4"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>-->
+            </div>
+            <div class="item">
+                @foreach (var x in Model)
+                {
+                    <li>
+                        <div class="slider-info  banner-view banner-top1 bg bg2" style="background: url(@x.banner2) no-repeat center;">
+                            <div class="banner-info">
+                                <div class="container">
+                                    <div class="banner-info-bg">
+                                        <h5>Audi RS6</h5>
+                                        <div class="banner-buttons">
+                                            <a class="btn btn-style btn-primary" href="/Home/rs6">RS6 Hakkında</a>
+                                            <a href="#small-dialog" class="popup-with-zoom-anim play-view">
+                                                <span class="video-play-icon">
+                                                    <span class="fa fa-play"></span>
+                                                </span>
+                                                <h6>RS6 Tanıtım</h6>
+                                            </a>
+                                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                            <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+                                                <iframe src="https://player.vimeo.com/video/715964312?h=d6901eae0e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="RS6 Frahman.mp4"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                }
+            </div>
+            <div class="item">
+                @foreach (var x in Model)
+                {
+                    <li>
+                        <div class="slider-info banner-view banner-top2 bg bg2" style="background: url(@x.banner3) no-repeat center;">
+                            <div class="banner-info">
+                                <div class="container">
+                                    <div class="banner-info-bg">
+                                        <h5>Audi RS5</h5>
+                                        <div class="banner-buttons">
+                                            <a class="btn btn-style btn-primary" href="/Home/About">RS5 Hakkında</a>
+                                            <a href="#small-dialog1" class="popup-with-zoom-anim play-view">
+                                                <span class="video-play-icon">
+                                                    <span class="fa fa-play"></span>
+                                                </span>
+                                                <h6>RS5 Tanıtım</h6>
+                                            </a>
+                                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                            <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+
+                                                <iframe src="https://player.vimeo.com/video/715964225?h=d7c83f650d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="RS7 Frahman.mp4"></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                }
+            </div>
+
+        </div>
+    </div>
+    </div>
+</section>
+<!-- //banner-slider--> @*"background: url(../images/banner11r.jpg) no-repeat top;"*@
+<!-- //bottom-grids -->
+<div class="w3l-bottom-grids">
+    <div class="container-fluid px-0">
+        <div class="bottomhny-grids-sec">
+
+            <div class="bottomhny-1">
+
+                <div class="bottomhny-gd-ingf">
+                    @foreach (var X in Model)
+                    {
+                        <h4>@X.oz1</h4>
+                    }
+                </div>
+            </div>
+            <div class="bottomhny-1 bottomhny-2">
+                <div class="bottomhny-gd-ingf">
+                    @foreach (var X in Model)
+                    {
+                        <h4>@X.oz2</h4>
+                    }
+                </div>
+            </div>
+
+            @foreach (var X in Model)
+            {
+        <div class="bottomhny-1 bottomhny-1-img" style="        background: url( @X.ozimg ) no-repeat top;
+        bottomhny-1 background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        -moz-background-size: cover;
+        -ms-background-size: cover;
+        position: center;
+        padding: 40px;
+        min-height: 350px;
+">
+            <div class="bottomhny-gd-ingf">
+            </div>
+        </div>
+            }
+            
+        </div>
+    </div>
+</div>
+      
+<!-- //bottom-grids -->
+<!-- /content-3-->
+<section class="w3l-content-3">
+    <!-- /content-3-main-->
+    <div class="content-3-mian py-5">
+        <div class="container py-lg-5">
+            <div class="content-info-in row">
+                <div class="col-lg-6">
+                    @foreach (var X in Model)
+                    {
+                        <img src="@X.raceimg" alt="" class="img-fluid">
+                    }
+                </div>
+                <div class="col-lg-6 mt-lg-0 mt-5 about-right-faq align-self  pl-lg-5">
+                    <div class="title-content text-left mb-2">
+                        <h6 class="sub-title">Audi RS</h6>
+                        <h3 class="hny-title">
+                            Yarışcı Ruh
+                        </h3>
+                    </div>
+                    @foreach (var X in Model)
+                    {
+                        <p class="mt-3">@X.racetext</p>
+                    }
+                    <a href="/Home/About" class="btn btn-style btn-primary mt-md-5 mt-4">Dahası</a>
+                </div>
+            </div>
+        </div>
+</section>
+<!-- //content-3-->
+<!-- /features-4 -->
+  <!-- /features-4 -->
+  <section class="features-4">
+    <div class="features4-block py-5">
+      <div class="container py-lg-4">
+        <div class="title-content text-center mb-lg-5 mt-4">
+          <h6 class="sub-title">Neden Audi RS</h6>
+          @foreach (var X in Model)
+                {
+                    <h3 class="hny-title">@X.infotext</h3>
+                }
+          
+        </div>
+        <div class="row features4-grids text-left mt-lg-4">
+          <div class="col-lg-3 col-md-6 features4-grid mt-4">
+            <div class="features4-grid-inn">
+              <div class="img-featured">
+                  @foreach (var x in Model)
+                  {
+                <div class="ch-item ch-img-1">
+                  <div class="ch-info-wrap">
+                    <div class="ch-info">
+                      <div class="ch-info-front" style="        background-image: url( @x.info1 );
+        background-repeat: no-repeat;
+        background-size: 300px;
+  "></div>
+                      <div class="ch-info-back">
+                        <h4>Audi RS</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                }
+              </div>
+
+              <div class="features4-rightinfo">
+                <h5><a href="#URL">Dış Tasarım</a></h5>
+               
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 features4-grid mt-4">
+            <div class="features4-grid-inn">
+                <div class="img-featured">
+                    @foreach (var x in Model)
+                    {
+                        <div class="ch-item ch-img-2">
+                            <div class="ch-info-wrap">
+                                <div class="ch-info">
+                                    <div class="ch-info-front" style=" background-image: url(@x.info2);"></div>
+                                    <div class="ch-info-back">
+                                        <h4>Audi RS</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+              <div class="features4-rightinfo">
+                <h5><a href="#URL">
+                    İç Tasarım</a>
+                  </h5>
+                
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 features4-grid mt-4">
+            <div class="features4-grid-inn">
+                <div class="img-featured">
+                    @foreach (var x in Model)
+                    {
+                        <div class="ch-item ch-img-3">
+                            <div class="ch-info-wrap">
+                                <div class="ch-info">
+                                    <div class="ch-info-front" style="background-image: url(@x.info3);"></div>
+                                    <div class="ch-info-back">
+                                        <h4>Audi RS</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    </div>
+              <div class="features4-rightinfo">
+                <h5><a href="#URL">
+                    Özgürlük Alanı</a></h5>
+               
+
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 features4-grid mt-4">
+            <div class="features4-grid-inn">
+                <div class="img-featured">
+                    @foreach (var x in Model)
+                    {<div class="ch-item ch-img-4">
+                            <div class="ch-info-wrap">
+                                <div class="ch-info">
+                                    <div class="ch-info-front" style="background-image: url(@x.info4);"></div>
+                                    <div class="ch-info-back">
+                                        <h4>Audi RS</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        }
+                        
+                    </div>
+              <div class="features4-rightinfo">
+                <h5><a href="#URL">
+                    Güçlü Motor</a></h5>
+               
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!--//features-4 -->
+<!-- middle -->
+<div class="middle py-5">
+    <div class="container py-xl-5 py-lg-3">
+        <div class="welcome-left text-left py-3">
+            <div class="title-content">
+                <h6 class="sub-title">Bizi Arayın</h6>
+                <h3 class="hny-title two mb-2">Rs deneyiminden hemen yararlanmak için arayın</h3>
+                <p>
+                    <a href="tel:444 25 34">
+                        444 25 34
+                    </a>
+                    Numaralı telefondan bizi arayabilirsiniz.
+                </p>
+
+            </div>
+
+            <a href="/Home/Contact" class="btn btn-white-active btn-primary mt-md-5 mt-4">Bize Ulaşın</a>
+        </div>
+    </div>
+</div>
+<!-- //middle -->
+<!-- Template JavaScript -->
+<script src="~/js/jquery-3.3.1.min.js"></script>
+<!-- disable body scroll which navbar is in active -->
+<script src="~/js/jquery.magnific-popup.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.popup-with-zoom-anim').magnificPopup({
+            type: 'inline',
+
+            fixedContentPos: false,
+            fixedBgPos: true,
+
+            overflowY: 'auto',
+
+            closeBtnInside: true,
+            preloader: false,
+
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-zoom-in'
+        });
+
+        $('.popup-with-move-anim').magnificPopup({
+            type: 'inline',
+
+            fixedContentPos: false,
+            fixedBgPos: true,
+
+            overflowY: 'auto',
+
+            closeBtnInside: true,
+            preloader: false,
+
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-slide-bottom'
+        });
+    });
+</script>
+<!--//-->
+<script src="~/js/theme-change.js"></script>
+<script src="~/js/owl.carousel.js"></script>
+<!-- script for banner slider-->
+<script>
+    $(document).ready(function () {
+        $('.owl-one').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            responsiveClass: true,
+            autoplay: false,
+            autoplayTimeout: 5000,
+            autoplaySpeed: 1000,
+            autoplayHoverPause: false,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                480: {
+                    items: 1,
+                    nav: false
+                },
+                667: {
+                    items: 1,
+                    nav: true
+                },
+                1000: {
+                    items: 1,
+                    nav: true
+                }
+            }
+        })
+    })
+</script>
+<!-- //script -->
+<!-- script for owlcarousel -->
+<script>
+    $(document).ready(function () {
+        $('.owl-testimonial').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            responsiveClass: true,
+            autoplay: false,
+            autoplayTimeout: 5000,
+            autoplaySpeed: 1000,
+            autoplayHoverPause: false,
+            responsive: {
+                0: {
+                    items: 1,
+                    nav: false
+                },
+                480: {
+                    items: 1,
+                    nav: false
+                },
+                667: {
+                    items: 1,
+                    nav: false
+                },
+                1000: {
+                    items: 1,
+                    nav: false
+                }
+            }
+        })
+    })
+</script>
+<!-- disable body scroll which navbar is in active -->
+<script>
+    $(function () {
+        $('.navbar-toggler').click(function () {
+            $('body').toggleClass('noscroll');
+        })
+    });
+</script>
+<!-- disable body scroll which navbar is in active -->
+<!-- stats number counter-->
+<script src="~/js/jquery.waypoints.min.js"></script>
+<script src="~/js/jquery.countup.js"></script>
+<script>
+    $('.counter').countUp();
+</script>
+<!-- //stats number counter -->
+<!--/MENU-JS-->
+<script>
+    $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+            $("#site-header").addClass("nav-fixed");
+        } else {
+            $("#site-header").removeClass("nav-fixed");
+        }
+    });
+
+    //Main navigation Active Class Add Remove
+    $(".navbar-toggler").on("click", function () {
+        $("header").toggleClass("active");
+    });
+    $(document).on("ready", function () {
+        if ($(window).width() > 991) {
+            $("header").removeClass("active");
+        }
+        $(window).on("resize", function () {
+            if ($(window).width() > 991) {
+                $("header").removeClass("active");
+            }
+        });
+    });
+</script>
+<!--//MENU-JS-->
